@@ -1,4 +1,4 @@
-baseURL = "http://iamrahulrnair.github.io/hugo-portfolio/"
+baseURL = "https://iamrahulrnair.github.io/hugo-portfolio/"
 languageCode = "en-us"
 title = "Personal Website | built on HUGO"
 theme="hugo-theme-m10c"

@@ -1,0 +1,93 @@
+<!doctype html><html lang=en-us>
+<head>
+<title>Rahul's portfolio</title>
+<link rel="shortcut icon" href=/icon/favicon-16x16.png>
+<link rel=icon href=/icon/favicon.ico>
+<meta charset=utf-8>
+<meta name=generator content="Hugo 0.89.0">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=author content="iamrahulrnair">
+<meta name=description content>
+<link rel=stylesheet href=https://iamrahulrnair.github.io/hugo-portfolio/css/main.min.2e8bf6ada9bb53e58be5e1442e232a16565c4c6f2e14b8b9f1396c5e167dba90.css>
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="How_to_setup_hugo_part2">
+<meta name=twitter:description content="Front Matter You can define something called front matter in hugo which by default will be generated from archetypes/default.md file. You can define default variables in there in yaml/ json/ toml and these variables can be used across the html with {{.<Variable_name>}}, they are also called metadata about a page.You can also define global variables in config.toml file, and these can be accessed as {{.Site.Params.<variable_name>}}, with this i was able to define favicons, some site specific variables.">
+<meta property="og:title" content="How_to_setup_hugo_part2">
+<meta property="og:description" content="Front Matter You can define something called front matter in hugo which by default will be generated from archetypes/default.md file. You can define default variables in there in yaml/ json/ toml and these variables can be used across the html with {{.<Variable_name>}}, they are also called metadata about a page.You can also define global variables in config.toml file, and these can be accessed as {{.Site.Params.<variable_name>}}, with this i was able to define favicons, some site specific variables.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://iamrahulrnair.github.io/hugo-portfolio/blogs/how_to_setup_hugo_part2/"><meta property="article:section" content="blogs">
+<meta property="article:published_time" content="2021-11-03T10:54:27+05:30">
+<meta property="article:modified_time" content="2021-11-03T10:54:27+05:30">
+</head>
+<body>
+<header class=app-header>
+<div class=social-links>
+<a href><img src=https://img.icons8.com/material-outlined/50/000000/github.png></a>
+<a href><img src=https://img.icons8.com/ios-glyphs/60/000000/linkedin.png></a>
+<a href><img src=https://img.icons8.com/ios-glyphs/60/000000/facebook-new.png></a>
+<a href><img src=https://img.icons8.com/color/48/000000/medium-logo--v2.png></a>
+</div>
+<a class=profile_image href=https://iamrahulrnair.github.io/hugo-portfolio/><img class=app-header-avatar src="https://avatars.githubusercontent.com/u/55950758?s=400&u=e73fcd52ff1a1a5bd5b185c6e9162e24c772dc4b&v=4" alt=iamrahulrnair></a>
+<div class=bio_def>
+<h1 class=name_heading>Rahul R</h1>
+<p>MCA 2021</p>
+<a href=/about>About🖖</a>
+<a href=/projects>Projects👌</a>
+<a href=/blogs>Blogs👋</a>
+<a href=/>Home 🤟 </a>
+</div>
+<p>A static site designed by me, but built on Hugo ❤️</p>
+</header>
+<main class=app-container>
+<article class=post>
+<header class=post-header>
+<h1 class=post-title>How_to_setup_hugo_part2</h1>
+<h4 class=post-author>
+<span style=color:rgba(136,135,135,.542);font-size:small>Author:</span>
+Rahul R
+<img src=https://img.icons8.com/color/48/000000/golang.png>
+</h4>
+<div class=post-meta>
+<div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+Nov 3, 2021
+</div>
+<div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock"><title>clock</title><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+2 min read
+</div>
+<div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+<a class=tag href=https://iamrahulrnair.github.io/hugo-portfolio/tags/hugo/>hugo</a>
+<a class=tag href=https://iamrahulrnair.github.io/hugo-portfolio/tags/themes/>themes</a>
+</div>
+</div>
+</header>
+<div class=post-content>
+<h3 id=front-matter>Front Matter</h3>
+<p>You can define something called front matter in hugo which by default will be generated from <strong>archetypes/default.md</strong> file. You can define default variables in there in yaml/ json/ toml and these variables can be used across the html with {{.&lt;Variable_name>}}, they are also called metadata about a page.You can also define global variables in config.toml file, and these can be accessed as {{.Site.Params.&lt;variable_name>}}, with this i was able to define favicons, some site specific variables.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#a6e22e>variables</span> <span style=color:#a6e22e>should</span> <span style=color:#a6e22e>be</span> <span style=color:#a6e22e>defined</span> <span style=color:#a6e22e>in</span> <span style=color:#a6e22e>config</span>.<span style=color:#a6e22e>toml</span> <span style=color:#a6e22e>as</span>:
+[<span style=color:#a6e22e>params</span>]
+<span style=color:#a6e22e>bio_desc</span> = <span style=color:#e6db74>&#34;A static site designed by me, but built on Hugo ❤️&#34;</span>
+<span style=color:#a6e22e>favicon_url</span> = <span style=color:#e6db74>&#34;/icon/&#34;</span>
+<span style=color:#a6e22e>author</span> = <span style=color:#e6db74>&#34;iamrahulrnair&#34;</span>
+
+<span style=color:#f92672>---</span>
+
+<span style=color:#a6e22e>some</span> <span style=color:#a6e22e>vaiables</span> <span style=color:#a6e22e>includes</span>:
+
+<span style=color:#ae81ff>1.</span> .<span style=color:#a6e22e>URL</span>
+<span style=color:#ae81ff>2.</span> .<span style=color:#a6e22e>Content</span>
+<span style=color:#ae81ff>3.</span> .<span style=color:#a6e22e>Title</span>
+   <span style=color:#a6e22e>etc</span>..</code></pre></div>
+<h3 id=taxonomy>Taxonomy</h3>
+<p>Another great feature is taxonomy for organising the content,its like hastags in insta such that tags defined in a page will be clustered to that particular tags.
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go> <span style=color:#a6e22e>some</span> <span style=color:#a6e22e>vaiables</span> <span style=color:#a6e22e>includes</span>:
+<span style=color:#a6e22e>You</span> <span style=color:#a6e22e>can</span> <span style=color:#a6e22e>define</span> <span style=color:#a6e22e>tags</span> <span style=color:#a6e22e>with</span> <span style=color:#a6e22e>tags</span>: [<span style=color:#e6db74>&#34;hugo&#34;</span>, <span style=color:#e6db74>&#34;themes&#34;</span>] <span style=color:#a6e22e>in</span> <span style=color:#a6e22e>the</span> <span style=color:#a6e22e>front</span><span style=color:#f92672>-</span><span style=color:#a6e22e>matter</span>,<span style=color:#a6e22e>such</span> <span style=color:#a6e22e>that</span> <span style=color:#a6e22e>the</span> <span style=color:#a6e22e>page</span> <span style=color:#a6e22e>will</span> <span style=color:#a6e22e>belong</span> <span style=color:#a6e22e>the</span> <span style=color:#a6e22e>both</span> <span style=color:#a6e22e>tags</span></code></pre></div></p>
+<h3 id=custom-templates>Custom templates</h3>
+<p>You can override the template defined for you in the themes by defining html in the layouts folder of your main project not in themes!!, if this is not possible then we cannot create custom github cards my styles. with this feature i was able to include global styles of themes along with my own layout feature</p>
+</div>
+<div class=post-footer>
+</div>
+</article>
+</main>
+<script src=//cdn.jsdelivr.net/github-cards/latest/widget.js></script>
+</body>
+</html>
